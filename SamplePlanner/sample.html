@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>要素のドラッグとリサイズのサンプル</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="frame">
+			<h2>&nbsp;◆2018年9月のスケジュール</h2>
+			<div id="head_left" class="table_left_top">
+				<table class="duty_w" style="width: 360px; height: 53px;" cellspacing="1" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td style="width:100px;">ID</td>
+							<td>氏名</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="table_left_bottom">
+				<table class="duty_w" style="width: 360px;" cellspacing="1" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td style="width:100px;">001</td>
+							<td class="lt">テスト太郎</td>
+						</tr>
+						<tr>
+							<td>002</td>
+							<td class="lt">テスト一郎</td>
+						</tr>
+						<tr>
+							<td>003</td>
+							<td class="lt">テスト二郎</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="head_right" class="table_right_top">
+				<table class="duty_w top" cellspacing="1" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<th class="tableCell">01日 <br>木</th>
+							<th class="tableCell">02日 <br>金</th>
+							<th class="tableCell">03日 <br>土</th>
+							<th class="tableCell">04日 <br>日</th>
+							<th class="tableCell">05日 <br>月</th>
+							<th class="tableCell">06日 <br>火</th>
+							<th class="tableCell">07日 <br>水</th>
+							<th class="tableCell">08日 <br>木</th>
+							<th class="tableCell">09日 <br>金</th>
+							<th class="tableCell">10日 <br>土</th>
+							<th class="tableCell">11日 <br>日</th>
+							<th class="tableCell">12日 <br>月</th>
+							<th class="tableCell">13日 <br>火</th>
+							<th class="tableCell">14日 <br>水</th>
+							<th class="tableCell">15日 <br>木</th>
+							<th class="tableCell">16日 <br>金</th>
+							<th class="tableCell">17日 <br>土</th>
+							<th class="tableCell">18日 <br>日</th>
+							<th class="tableCell">19日 <br>月</th>
+							<th class="tableCell">20日 <br>火</th>
+							<th class="tableCell">21日 <br>水</th>
+							<th class="tableCell">22日 <br>木</th>
+							<th class="tableCell">23日 <br>金</th>
+							<th class="tableCell">24日 <br>土</th>
+							<th class="tableCell">25日 <br>日</th>
+							<th class="tableCell">26日 <br>月</th>
+							<th class="tableCell">27日 <br>火</th>
+							<th class="tableCell">28日 <br>水</th>
+							<th class="tableCell">29日 <br>木</th>
+							<th class="tableCell">30日 <br>金</th>
+							<th class="tableCell">31日 <br>土</th>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			<div id="detail" style="height: 122px;" class="table_right_bottom">
+				<div id="panel1" class="panel panel1"><span class="label">&nbsp;</span></div>
+				<div id="panel2" class="panel panel2"><span class="label">&nbsp;</span></div>
+				<table id="detailTable" class="duty_w" onselectstart="return false;" cellspacing="1" cellpadding="0" border="0">
+					<tbody>
+						<tr id="row1">
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+						</tr>
+						<tr id="row2">
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+						</tr>
+						<tr id="row3">
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+							<td class="tableCell"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div style="margin:10px;">
+			<span>日付：</span>
+			<span id="date"></span>
+			<input id="days" type="hidden" value="1"/>
+		</div>
+	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready( function () {
+			initialize();
+		} );
+	</script>
+
+</html>
